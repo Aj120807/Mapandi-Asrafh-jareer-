@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asrafh Jareer | Personal Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1120;
+            color: #f1f5f9;
+            line-height: 1.7;
+        }
+
+        nav {
+            background: #131d31;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav h2 {
+            color: #60a5fa;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+        .hero {
+            min-height: 450px;
+            padding: 80px 10%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .hero-text {
+            max-width: 750px;
+        }
+
+        .hero h1 {
+            font-size: 44px;
+            margin: 10px 0;
+        }
+
+        .blue {
+            color: #60a5fa;
+        }
+
+        .hero h3 {
+            color: #cbd5e1;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #a6b2c5;
+            margin: 10px 0;
+        }
+
+        .button {
+            display: inline-block;
+            background: #60a5fa;
+            color: #0b1120;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #93c5fd;
+        }
+
+        section {
+            padding: 60px 10%;
+            scroll-margin-top: 70px;
+        }
+
+        section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background: #131d31;
+            border: 1px solid #293750;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .skill {
+            background: #131d31;
+            border: 1px solid #293750;
+            border-radius: 10px;
+            padding: 20px 10px;
+            text-align: center;
+            color: #f1f5f9;
+        }
+
+        #contact a {
+            color: #60a5fa;
+            text-decoration: none;
+            overflow-wrap: anywhere;
+        }
+
+        #contact a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #131d31;
+            border-top: 1px solid #293750;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 5px;
+            }
+
+            .hero {
+                padding: 50px 7%;
+                min-height: 400px;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            section {
+                padding: 45px 7%;
+            }
+
+            .skills {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <h2>AJ<span class="blue">.</span></h2>
+
+        <div>
+            <a href="#home">Home</a>
+            <a href="#education">Education</a>
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- HOME -->
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+            <p class="blue">WELCOME TO MY PERSONAL WEBSITE</p>
+
+            <h1>Hi, I'm <span class="blue">Asrafh Jareer</span></h1>
+
+            <h3>College Student and Aspiring IT Professional</h3>
+
+            <p>
+                Welcome to my personal portfolio! I am a college student
+                interested in technology, programming, and computer systems.
+                I enjoy learning new things and improving my skills to
+                prepare for my future career in Information Technology.
+            </p>
+
+            <a class="button" href="#about">Get to Know Me</a>
+        </div>
+
+    </section>
+
+    <!-- EDUCATIONAL BACKGROUND -->
+    <section id="education">
+
+        <p class="blue">MY ACADEMIC JOURNEY</p>
+        <h2>Educational Background</h2>
+
+        <div class="card">
+            <h3>Adamson University</h3>
+
+            <p>College Student</p>
+
+            <p>
+                I am continuing my college education and learning about
+                programming, computer systems, and information technology.
+                My goal is to improve my knowledge and become a skilled
+                IT professional.
+            </p>
+
+            <p>
+                Course and Year Level: Add your exact course and year level here.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- ABOUT ME -->
+    <section id="about">
+
+        <p class="blue">GET TO KNOW ME</p>
+        <h2>About Me</h2>
+
+        <div class="card">
+
+            <p>
+                I am a college student who enjoys technology and learning
+                new computer skills. I am interested in programming and
+                exploring how computers and technology work.
+            </p>
+
+            <p>
+                During my free time, I enjoy playing billiards and
+                basketball. These hobbies help me relax, have fun, and
+                spend quality time with my friends. Playing basketball
+                helps me develop teamwork and discipline, while billiards
+                improves my focus, patience, and strategic thinking.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+
+        <p class="blue">WHAT I CAN DO</p>
+        <h2>My Skills</h2>
+
+        <div class="skills">
+            <div class="skill">C# Programming</div>
+            <div class="skill">HTML</div>
+            <div class="skill">Accountancy</div>
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+
+        <p class="blue">LET'S CONNECT</p>
+        <h2>Contact Me</h2>
+
+        <div class="card">
+
+            <p>
+                Thank you for visiting my personal website!
+                You can contact me through my email address below.
+            </p>
+
+            <p>
+                Email:
+                <a href="emailto:eyycheyy2121@gmail.com">
+                    eyycheyy2121@gmail.com
+                </a>
+				
+			<p>	
+				Phone number:09937413007
+            </p>
+
+            <p>
+                
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Asrafh Jareer M. Mapandi</p>
+        <p>Personal Portfolio Website</p>
+    </footer>
+
+</body>
+</html>
